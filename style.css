@@ -53,3 +53,30 @@ body {
 .special-header p {
   opacity: 0.5;
 }
+.maps .container {
+  margin-left: 20px;
+}
+@media (max-width: 786px) {
+  .maps .container {
+    margin-left: 0;
+  }
+}
+.maps .container .left-side iframe {
+  position: relative;
+}
+.maps {
+  background-image: url(./images/bge.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: bold;
+}
+.maps .container .left-side iframe::after {
+  position: absolute;
+  height: 110%;
+  width: 110%;
+  background: linear-gradient(to right,rgb(15, 214, 148) 20%, rgb(107, 246, 107) 100%)
+}
+.maps .left-side .map {
+  height: 100%;
+  width: 100%;
+}
