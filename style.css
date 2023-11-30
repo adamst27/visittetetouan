@@ -38,8 +38,13 @@ body {
   scale: 1.1;
 }
 .navbar {
-  background-color: rgb(15, 214, 148);
-}
+  background-color: rgb(90, 153, 133);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  }
+
 .special-header {
   line-height: 0px;
   font-family: "Outfit", sans-serif;
@@ -58,24 +63,21 @@ body {
 }
 @media (max-width: 786px) {
   .maps .container {
-    margin-left: 0;
+    margin: 0 auto;
   }
 }
 .maps .container .left-side iframe {
   position: relative;
 }
 .maps {
-  background-image: url(./images/bge.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: rgb(169,135,124);
+  background: linear-gradient(13deg, rgba(169,135,124,1) 7%, rgba(169,135,124,1) 7%, rgb(170, 234, 214) 54%);
   font-weight: bold;
 }
-.maps .container .left-side iframe::after {
-  position: absolute;
-  height: 110%;
-  width: 110%;
-  background: linear-gradient(to right,rgb(15, 214, 148) 20%, rgb(107, 246, 107) 100%)
+.maps .container {
+  margin: 10px auto;
 }
+
 .maps .left-side .map {
   height: 100%;
   width: 100%;
