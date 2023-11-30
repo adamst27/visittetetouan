@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100vh;
+}
+
+.carousel-caption {
+  padding-top: 6.25rem !important;
+  position: absolute;
+  top: 27%;
+  text-align: center;
+  color: #ffffff !important;
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha value as needed */
+  padding: 20px; /* Add padding for better visibility */
+}
+.carousel-caption button {
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 20px;
+  transition: 0.3s linear;
+  width: 50%;
+  border: 1px solid white;
+  background-color: rgb(145, 145, 196);
+}
+.carousel-caption button:hover {
+  scale: 1.1;
+}
+.navbar {
+  background-color: rgb(15, 214, 148);
+}
+.special-header {
+  line-height: 0px;
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  letter-spacing: 8px;
+}
+.special-header p {
+  opacity: 0.5;
+}
